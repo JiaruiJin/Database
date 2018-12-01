@@ -74,7 +74,7 @@ def get_all_tweets(screen_name):
         if mediaURL != '':
             URL = mediaURL
             urlretrieve(URL, mediaName)
-            labels = googlevision.lable(screen_name,img_num,URL)
+            labels = googlevision.label(screen_name,img_num,URL)
 
             picNum += 1
             if (picNum == img_num+1):
